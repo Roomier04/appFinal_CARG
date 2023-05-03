@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".modificar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:background="#CACFEA"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/tvTituloAL"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:text="Modificar Empleado"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#050000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            app:srcCompat="@drawable/supe_removebg_preview" />
+
+        <EditText
+            android:id="@+id/etNumeroAL"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Numero de identificación"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#090000" />
+
+        <EditText
+            android:id="@+id/etNombreAL"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Nombre"
+            android:textColor="#0C0000" />
+
+        <EditText
+            android:id="@+id/etPuestoAL"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Apellido"
+            android:textColor="#0E0000" />
+
+        <EditText
+            android:id="@+id/etDiasAL"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Puesto"
+            android:textColor="#050000" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:onClick="consultaProducto"
+            android:text="Buscar" />
+
+        <Button
+            android:id="@+id/btnAltaAL"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:onClick="modificarProductos"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:onClick="regresar"
+            android:text="Regresar" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

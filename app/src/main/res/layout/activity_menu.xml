@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="741dp"
+        android:background="#CACFEA"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp">
+
+        <TextView
+            android:id="@+id/tvTituloAL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" Menu Registros"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0B1711"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            app:srcCompat="@drawable/supe_removebg_preview" />
+
+        <Button
+            android:id="@+id/btnAltaAL"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A63ECC"
+            android:onClick="alta"
+            android:text="Alta empleado" />
+
+        <Button
+            android:id="@+id/btnBajaAL"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A63ECC"
+            android:onClick="baja"
+            android:text="Baja empleado" />
+
+        <Button
+            android:id="@+id/btnEditarAL"
+            android:layout_width="332dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A63ECC"
+            android:onClick="modificar"
+            android:text="Editar empleado" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTituloJG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nuestros Juegos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0B1711"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnConsulAL"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A63ECC"
+            android:onClick="consulta"
+            android:text="Juegos" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
